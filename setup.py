@@ -11,7 +11,7 @@ with open("esm/version.py") as infile:
 
 
 setup(
-    name="esm",
+    name="bio_embedidngs-esm",
     version=version,
     description="Pre-trained evolutionary scale models for proteins, from Facebook AI Research.",
     author="Facebook AI Research",

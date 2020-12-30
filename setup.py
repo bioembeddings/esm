@@ -6,13 +6,9 @@
 from setuptools import setup
 
 
-with open("esm/version.py") as infile:
-    exec(infile.read())
-
-
 setup(
-    name="bio_embedidngs-esm",
-    version=version,
+    name="bio_embeddings-esm",
+    version="0.2.1", # Patched for bio_embeddings
     description="Pre-trained evolutionary scale models for proteins, from Facebook AI Research.",
     author="Facebook AI Research",
     url="https://github.com/facebookresearch/esm",
@@ -20,4 +16,5 @@ setup(
     packages=["esm"],
     data_files=[("source_docs/esm", ["LICENSE", "README.md", "CODE_OF_CONDUCT.rst"])],
     zip_safe=True,
+    install_requires=["torchvision"]
 )
